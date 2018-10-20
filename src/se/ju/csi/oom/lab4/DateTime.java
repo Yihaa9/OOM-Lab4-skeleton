@@ -23,6 +23,7 @@ public class DateTime {
 		this.hour = hour;
 		this.minute = minute;
 		this.second = second;
+		
 	}
 
 	public DateTime(String dateString) {

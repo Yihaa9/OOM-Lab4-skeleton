@@ -17,10 +17,12 @@ public class TimeZoneTranslatorTest {
 	@Test
 	public void testShiftTimeZone() {
 		DateTime dateTime = new DateTime(2018, 12, 31, 23, 0, 0);
+		DateTime datetime2 = new DateTime("2019-01-01 01:00:00");
 		String stringDate = "2019-01-01 01:00:00";
 		
 		dateTime = TimeZoneTranslator.shiftTimeZone(dateTime, 0, 2);
 		assertEquals(stringDate ,dateTime.toString());
+		assertEquals(stringDate, datetime2.toString());
 		//fail("Not yet implemented");
 	}
 
